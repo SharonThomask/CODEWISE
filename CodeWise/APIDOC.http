@@ -1,0 +1,45 @@
+#API call for Display all questions
+
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "title": "prime number",
+    "language": "Java Script",
+    "difficulty": "Easy",
+    "topic": "Loops",
+    "notes": "Write a program to find if a given number is prime or not.",
+    "sample_input": "",
+    "sample_output": "",
+    "score": 10
+    
+}
+
+###
+
+GET http://127.0.0.1:8000/questions/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/1/
+Content-Type: application/json
+
+{
+    "title": "prime number",
+    "language": "Java Script",
+    "difficulty": "Easy",
+    "topic": "Loops",
+    "notes": "Write a program to find if a given number is prime or not.",
+    "sample_input": "",
+    "sample_output": "",
+    "score": 10
+    
+}
+
+### 
+DELETE http://127.0.0.1:8000/questions/2/
+Accept: application/json
